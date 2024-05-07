@@ -1,0 +1,199 @@
+.products-main-container{
+    width: 100%;
+    display: flex;
+    margin-top: 180px;
+}
+
+.products-main-container .upper-section{
+    display: flex;
+}
+
+.product-img-container{
+    flex: 1;   
+    position: relative;
+}
+
+.product-img{
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+}
+
+.lens{
+    margin: 0px;
+    width: 20vw;
+    height: 20vw;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: 2px solid blue;
+    background-color: rgba(255,255,255,0.7);
+    opacity: 0;
+}
+
+.result{
+    margin: 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    /* border: 2px solid blue;
+    background-color: rgba(255,255,255,0.1); */
+    opacity: 0;
+    background-repeat:no-repeat;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    transition: opacity 0.3s;
+}
+
+.product-info-container{
+    flex: 1;
+}
+
+.product-title{
+    font-family: "Merriweather", serif;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0px;
+}
+
+.product-info-container .price{
+    font-weight: bold;
+    display: inline-block;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.product-info-container .content{
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 350;
+    line-height: 1.6;
+    font-size: 16px;
+    margin-top: -20px;
+}
+
+.add-to-cart-container{
+    display: flex;
+    width: 70%;
+    align-items: center;
+    margin-top: 0px;
+    position: relative;
+}
+
+.box{
+    font-family: 'Open Sans',sans-serif;
+    background-color: white;
+    width: 45px;
+    height: 17px;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: rgb(205, 203, 203);
+    padding: 0px 0px 12px 11px;
+    padding-top: 10px;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.box-button-up,
+.box-button-down{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    padding: 1px;
+    font-size: 8px;
+    border: none;
+    transition: all 0.2s;
+    border-radius: 4px;
+    display: none;
+}
+
+.box-button-up{
+    left: 35px;
+    top: 4px;
+}
+
+.box-button-down{
+    left: 35px;
+    top: 20px;
+}
+
+.box:hover ~.box-button-up{
+    display: block;
+}
+
+.box:hover ~.box-button-down{
+    display: block;
+}
+
+.box-button-up:hover,
+.box-button-down:hover{
+    background-color: rgb(182, 182, 182);
+}
+
+.box-button-up:active,
+.box-button-down:active{
+    background-color: rgb(79, 79, 79);
+    color: white;
+}
+
+.add-to-cart{
+    width: 70%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #6A9739;
+    color: white;
+    display: inline-block;
+    transition: all 0.4s;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.add-to-cart:hover{
+    background-color: #87c248;
+    cursor: pointer;
+}
+
+.product-info-container .line{
+    margin-top: 20px;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: rgb(199, 199, 199);
+    width: 105%;
+}
+
+.category{
+    font-family: 'Open Sans',sans-serif;
+    font-size: 15px;
+    font-weight: 350;
+}
+
+.category-type{
+    font-family: 'Open Sans',sans-serif;
+    font-size: 15px;
+    font-weight: 350;
+    color: #87c248;
+}
+
+.rate-product{
+    font-family: 'Open Sans',sans-serif;
+    font-size: 15px;
+    font-weight: 350;
+}
+
+.star-container{
+    margin-top: -15px;
+    width: 140px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.star-container .star-1,
+.star-2, .star-3, .star-4, .star-5{
+    font-size: 25px;
+    color: rgb(190, 190, 190);
+    cursor: pointer;
+    width: 28px;
+}
